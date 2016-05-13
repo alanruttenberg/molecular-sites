@@ -1,0 +1,35 @@
+# The follow is a list of MOD IDs taken from the PSI-MOD ontology, which correspond to the
+# modifications seen in the Histone Infobase and TDR data sets. 
+# MOD:XXXXX is the PSI-MOD id, followed by the term name, followed by the abbreviation
+# used in the Infobase. If no abbreviation is listed, that modification is not found in
+# the Infobase data set, and thus no abbreviation exists. 
+# Note: An abbreviation preceded by "potentially" means that MOD id is assumed to 
+# represent the same type of modification as the abbreviation. Ex. MOD:00076 in the
+# TDR, a symmetric dimethyl-L-arginine, probably represents the same modification 
+# 'me2' (dimethylation) on an arginine, in the Infobase, but may not. A dimethylated 
+# arginine (MOD:00783) maybe be asymmetric (MOD:00077) or symmetric (MOD:00076) but
+# we cannot tell which in the Infobase data the abbreviation 'me2' refers to, only
+# that 'R-me2'is a dimethylated arginine .
+
+MOD:00046 : O-phospho-L-serine : ph
+MOD:00047 : O-phospho-L-threonine : ph
+MOD:00064 : N6-acetyl-L-lysine : ac
+MOD:00076 : symmetric dimethyl-L-arginine : potentially me2
+MOD:00048 : O4'-phospho-L-tyrosine : ph
+MOD:00083 : N6,N6,N6-trimethyl-L-lysine : me3
+MOD:00084 : N6,N6-dimethyl-L-lysine : me2
+MOD:00085 : N6-methyl-L-lysine : me1
+MOD:00059 : N-acetyl-L-proline : 
+MOD:00058 : N-acetyl-L-methionine
+MOD:00078 : omega-N-methyl-L-arginine : potentially me1
+MOD:00060 : N-acetyl-L-serine :
+
+MOD:00219 : L-citrulline : ci
+MOD:00126 : N6-biotinyl-L-lysine : bio
+MOD:01148 : ubiquitinylated lysine : ub
+
+For lysine ribosylation I found MOD:00731 : ribosylated and
+                                MOD:01399 : N6-(ADP-ribosyl)-L-lysine : ar
+
+I think the latter is the better one
+ 

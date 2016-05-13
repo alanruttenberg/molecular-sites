@@ -1,0 +1,252 @@
+<!--  RESIDUES.DTD 31-Dec-2011  -->
+<!--  provisional, validated version 01.00 29-Oct-2000  -->
+<!--  provisional, validated version 01.01 03-Dec-2000  -->
+<!--  provisional, validated version 01.02 31-Mar-2001  -->
+<!--  provisional, validated version 01.03 04-May-2001  -->
+<!--  provisional, validated version 01.04 30-Jun-2001  -->
+<!--  provisional, validated version 01.05 06-Aug-2001  -->
+<!--  provisional, validated version 01.06 30-Sep-2001  -->
+<!--  provisional, validated version 01.07 02-Nov-2001  -->
+<!--  provisional, validated version 01.08 24-May-2002  -->
+<!--  provisional, validated version 01.09 21-Feb-2003  -->
+<!--  provisional, validated version 01.10 31-Mar-2003  -->
+<!--  provisional, validated version 01.11 31-Dec-2003  -->
+<!--  provisional, validated version 01.12 10-Sep-2004  -->
+<!--  provisional, validated version 01.13 31-Dec-2004  -->
+<!--  provisional, validated version 01.14 25-Feb-2005  -->
+<!--  provisional, validated version 01.15 27-May-2005  -->
+<!--  provisional, validated version 01.16 30-Jun-2005  -->
+<!--  provisional, validated version 01.17 31-Dec-2005  -->
+<!--  provisional, validated version 01.18 31-Mar-2006  -->
+<!--  provisional, validated version 01.19 31-Dec-2006  -->
+<!--  provisional, validated version 01.20 09-Nov-2007  -->
+<!--  provisional, validated version 01.21 31-Mar-2008  -->
+<!--  provisional, validated version 01.22 30-Sep-2008  -->
+<!--  provisional, validated version 01.23 30-Sep-2009  -->
+<!--  provisional, validated version 01.24 08-Mar-2010  -->
+<!--  provisional, validated version 01.25 28-May-2010  -->
+<!--  provisional, validated version 01.26 25-Feb-2011  -->
+<!--  provisional, validated version 01.27 24-Aug-2012  -->
+<!--  provisional, validated version 01.28 31-Dec-2012  -->
+<!ELEMENT Database (DBAuthor,Address,Copyright,DBdescription,DBkeywords,Entry+)>
+<!ATTLIST Database id      ID    #REQUIRED>
+<!ATTLIST Database release CDATA #IMPLIED>
+<!ATTLIST Database date    CDATA #IMPLIED>
+<!ELEMENT DBAuthor      (#PCDATA)>
+<!ELEMENT Address       (#PCDATA)>
+<!ELEMENT Copyright     (#PCDATA)>
+<!ELEMENT DBdescription (#PCDATA)>
+<!ELEMENT DBkeywords    (#PCDATA)>
+<!ELEMENT Entry (
+  Header,
+  Names,
+  FormulaBlock+,
+  CorrectionBlock*,
+  ReferenceBlock*,
+  Comment*,
+  GeneratingEnzyme*,
+  SequenceCode+,
+  Source,
+  Keywords?,
+  Features?,
+  Image,
+  Model?
+)>
+<!ATTLIST Entry id ID #REQUIRED>
+<!-- id and Code format
+    Code, id = "AA" followed by four digits
+ -->
+
+<!ELEMENT Header (Code, Dates)>
+<!ELEMENT Code (#PCDATA)>
+<!ELEMENT Dates (CreationDate, StrucRevDate, TextChngDate)>
+<!ELEMENT CreationDate (#PCDATA|Date)*>
+<!ELEMENT StrucRevDate (#PCDATA|Date)*>
+<!ELEMENT TextChngDate (#PCDATA|Date)*>
+<!ELEMENT Date (Day, Month, Year)>
+<!ELEMENT Day (#PCDATA)>
+<!ELEMENT Month (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+<!-- Date format
+     Date  = Day "-" Month "-" Year
+     Day   = [\d{2}] a two digit number between "01" and "31" 
+     Month = { "Jan" | "Feb" | "Mar" | "Apr" | "May" | "Jun" |
+               "Jul" | "Aug" | "Sep" | "Oct" | "Nov" | "Dec" }
+     Year  = a four digit number
+ -->
+
+<!ELEMENT Names (Name, AlternateName*, SystematicName?, Xref*)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT AlternateName (#PCDATA)>
+<!ATTLIST AlternateName link CDATA #IMPLIED>
+<!ELEMENT SystematicName (#PCDATA)>
+
+<!ELEMENT FormulaBlock (Formula, FormalCharge?, Weight+)>
+<!ATTLIST FormulaBlock label CDATA #IMPLIED>
+<!ELEMENT Formula (#PCDATA|ElementComp)*>
+<!ELEMENT ElementComp (Element, Count)>
+<!ELEMENT Element (#PCDATA)>
+<!ELEMENT Count (#PCDATA)>
+<!-- ElementComp format
+     ElementComp = [ Element " " n ... ] [" var"] 
+     Element     = standard IUPAC element abbreviations arrayed
+                   alphabetically. NOTE: it is not in Chemical
+                   Abstracts order, for which 'C' and 'H' always
+                   come first if present. In RESID 'C' and 'H'
+                   are always present and followed by '0' (zero)
+                   if necessary, but are otherwise in strictly
+                   alphabetic order.
+                   The "var", if present, indicates an additional, 
+                   variable or indeterminate composition or weight.
+-->
+<!ELEMENT FormalCharge (#PCDATA)>
+<!-- FormalCharge format
+     integer followed by "+" or "-"
+ -->
+<!ELEMENT Weight (#PCDATA)>
+<!ATTLIST Weight type (chemical|physical) #REQUIRED>
+<!-- Weight type format
+     "chemical" average isotopic atomic weight
+     "chemical" Weight = [-] [\d+.\d{2}] [" var"]
+     "physical" most common, mono-isotopic atomic weight
+     "physical" Weight = [-] [\d+.\d{6}] [" var"]
+ -->
+
+<!ELEMENT CorrectionBlock (Formula, FormalCharge?, Weight+)>
+<!ATTLIST CorrectionBlock uids  IDREFS #REQUIRED
+                          label CDATA  #IMPLIED
+                          link  CDATA  #IMPLIED>
+<!-- label and link format
+    label, link  = three or four uppercase letters or numbers, usually a
+                   standard three letter IUPAC abbreviation.  Each label
+                   is unique within an entry and is declared in either a
+                   FormulaBlock or CorrectionBlock, but not both, and is
+                   referred to elsewhere within the same entry by records
+                   with link attributes.  When labels are declared in
+                   multiple FormulaBlocks, then there are corresponding
+                   CorrectionBlock with links to those FormulaBlocks.
+ -->
+
+<!ELEMENT ReferenceBlock (Authors,Citation,(Title|Description)?,Xref*,Note*)>
+<!ATTLIST ReferenceBlock serial CDATA #IMPLIED>
+<!ELEMENT Authors (Author+|(Anonymous,Group?))>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Anonymous EMPTY>
+<!ELEMENT Group (#PCDATA)>
+<!ELEMENT Citation (#PCDATA|JourSpec|BookSpec|SubmSpec|OthrSpec)*>
+<!ATTLIST Citation type (journal|book|submission|other) "journal">
+<!ELEMENT JourSpec (Journal, Volume, Pages, Year)>
+<!ELEMENT Journal (#PCDATA)>
+<!ELEMENT Volume (#PCDATA)>
+<!ELEMENT Pages (#PCDATA|FirstPage|LastPage)*>
+<!ELEMENT FirstPage (#PCDATA)>
+<!ELEMENT LastPage (#PCDATA)>
+<!ELEMENT BookSpec (#PCDATA|Year)*>
+<!ELEMENT SubmSpec (#PCDATA|Month|Year)*>
+<!ELEMENT OthrSpec (#PCDATA|Year)*>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+
+<!ELEMENT Comment (#PCDATA)>
+
+<!ELEMENT GeneratingEnzyme (EnzymeName)+>
+<!ELEMENT EnzymeName (#PCDATA|EC_Name|EC_Number)*>
+<!ATTLIST EnzymeName link CDATA #IMPLIED>
+<!-- SequenceCode vocabulary
+The link in "EnzymeName", "SequenceCode" and "Feature" elements refers
+to the "FormulaBlock" or "CorrectionBlock" element with the corresponding
+label attribute.
+ -->
+<!ELEMENT EC_Name (#PCDATA)>
+<!ELEMENT EC_Number (#PCDATA)>
+
+<!ELEMENT SequenceCode (SequenceSpec, Abbreviation?, Condition*, Xref*)+>
+<!ATTLIST SequenceCode link CDATA #IMPLIED>
+<!-- SequenceCode vocabulary
+The link in "EnzymeName", "SequenceCode" and "Feature" elements refers
+to the "FormulaBlock" or "CorrectionBlock" element with the corresponding
+label attribute.
+ -->
+<!ELEMENT SequenceSpec (#PCDATA)>
+<!-- SequenceSpec vocabulary
+For the "SequenceSpec" elements, IUPAC standard one letter amino acid
+codes are used. A comma-separated list indicates multiple codes all of
+which comprise the modification, but may appear in any order.
+ -->
+<!ELEMENT Abbreviation (#PCDATA)>
+<!ELEMENT Condition (#PCDATA)>
+<!-- Condition vocabulary
+     [ "amino-terminal" ]
+     [ "carboxyl-terminal" | "carboxamidine" ]
+     [ "cross-link " n ]
+     [ "secondary to " res_code ]
+     [ "incidental to " res_code ]
+For the "Condition" element, "secondary to" means the modification may
+occur only when the modification of the referenced entry is also present
+and the same residue is involved.  For example, a lysine residue must
+be 5-hydroxylated before it can be O-glycosylated.  "incidental to" means
+the modification may occur along with the modification of the referenced
+entry, but that the same residue is not necessarily involved. As examples,
+the N-acylation of cysteine is incidental to the attachment of
+S-diacylglycerol on the same residue, and the deamidation of asparagine
+is incidental to the myristoylation of the preceding glycine.
+ -->
+
+<!ELEMENT Source (#PCDATA|Taxonomic_Range)*>
+<!ELEMENT Taxonomic_Range (Taxonomic_Spec)+>
+<!ELEMENT Taxonomic_Spec (#PCDATA)>
+<!-- Source vocabulary
+     { "natural" | "hypothetical" | "unencoded" | "artifactual" | "ambiguity" |
+       "deprecated" }
+For the "Source" element,
+  "natural"       experimentally observed post-translational modification,
+  "hypothetical"  predicted post-translational modification,
+  "unencoded"     modified amino acid found only in non-ribosomally produced
+                  peptides,
+  "artifactual"   modification arising only from experimental handling,
+  "ambiguity"     single letter code for sequence ambiguity.
+  "deprecated"    a modification predicted at one time but now considered
+                  not likely to exist,
+The "Taxonomic_Range" elements do not yet appear but may be implemented in a
+future release of the database.
+ -->
+
+<!ELEMENT Keywords (Keyword)+>
+<!ELEMENT Keyword (#PCDATA)>
+
+<!ELEMENT Features (Feature|FeatureNote)*>
+<!ELEMENT Feature (#PCDATA)>
+<!ATTLIST Feature type (UniProt) #REQUIRED
+                  key  CDATA     #IMPLIED
+                  link CDATA     #IMPLIED>
+<!ELEMENT FeatureNote (Feature, Note)>
+<!-- Feature vocabulary
+The link in "EnzymeName", "SequenceCode" and "Feature" elements refers
+to the "FormulaBlock" or "CorrectionBlock" element with the corresponding
+label attribute.
+ -->
+<!ELEMENT Image EMPTY>
+<!ATTLIST Image src CDATA #REQUIRED
+                alt CDATA #REQUIRED>
+<!ELEMENT Model EMPTY>
+<!ATTLIST Model src CDATA #REQUIRED >
+
+<!-- General elements that are contained in several parent elements -->
+<!ELEMENT Note (#PCDATA)>
+<!ELEMENT Xref (#PCDATA|Database_Tag|uid)*>
+<!ATTLIST Xref type (name|ref|seqspec) #IMPLIED>
+<!ELEMENT Database_Tag (#PCDATA)>
+<!ELEMENT uid (#PCDATA)>
+<!-- alternatively
+<!ELEMENT Xref EMPTY)>
+<!ATTLIST Xref type (name|ref|seqspec) #IMPLIED
+               db   (CDATA)            #REQUIRED
+               uid  (IDREF)            #REQUIRED>
+-->
+<!-- Database_Tag vocalulary
+{ "CAS"     | "ChEBI"   | "COMe"    | "DOI"     | "EPO"     |
+  "GO"      | "http"    | "PDB"     | "PDBHET"  | "PIR"     |
+  "PMID"    | "PSI-MOD" | "RESID"   | "USPTO"   | "WIPO"    }
+CAS Registry Numbers are copyrighted by the American Chemical Society and
+are used with permission of the Chemical Abstracts Service.
+-->
