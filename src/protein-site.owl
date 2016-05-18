@@ -72,9 +72,7 @@
 
     <!-- http://purl.obolibrary.org/obo/PROXXX_0001020 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001020">
-        <rdfs:label xml:lang="en">inverse of is about</rdfs:label>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001020"/>
     
 
 
@@ -119,25 +117,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCRO_0004000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCRO_0004000">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label xml:lang="en">molecule site</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PROXXX_0001000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001000">
@@ -152,7 +131,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCRO_0004000"/>
         <obo:IAO_0000115>a three-dimensional immaterial part of an amino acid chain in which may be located either nothing or some part of a protein</obo:IAO_0000115>
         <obo:IAO_0000117>Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">amino acid chain site</rdfs:label>
@@ -187,7 +165,7 @@
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001001"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/pro/protein-site.owl#PROSITES_0000024"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001023"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -257,119 +235,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001013 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001017"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001021"/>
-                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001014 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001017"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0074"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001021"/>
-                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001017"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0076"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001021"/>
-                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001008"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001017"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0055"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001021"/>
-                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001009"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PR_000036802"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The site of an amino acid residue in a mouse histone H3.3 protein</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">mouse histone H3.3 site</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PROXXX_0001018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001018">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001005"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001004"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PR_P84244"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">site location within reference sequence of uniprot P84244</rdfs:label>
+        <rdfs:label xml:lang="en">molecule site</rdfs:label>
     </owl:Class>
     
 
@@ -386,7 +255,7 @@
                         <owl:someValuesFrom>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/pro/protein-site.owl#PROSITES_0000024"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001023"/>
                             </owl:Restriction>
                         </owl:someValuesFrom>
                     </owl:Restriction>
@@ -399,241 +268,20 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PR_000036802 -->
+    <!-- http://purl.obolibrary.org/obo/PROXXX_0001020 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_000036802">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_P84244"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001012"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001012"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001012"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001016"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001012"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001014"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0074"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001012"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/pro/protein-site.owl#PROSITES_0000024"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:onClass>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A histone H3.3 that has been acetylated on the N-terminal Met and methylated on several Lys residues in mouse. UniProtKB:P84244, Met-1, MOD:00058|Lys-10/Lys-28, MOD:00083|Lys-19, MOD:00085. [TDR:PFR9332] </obo:IAO_0000115>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PR_P84244 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_P84244">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
-        <rdfs:label xml:lang="en">histone H3.3 (mouse)</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RESID_0049 -->
+    <!-- http://purl.obolibrary.org/obo/PROXXX_0001023 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0049">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RESID_0055 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0055">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RESID_0067 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0067">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pro/protein-site.owl#PROSITES_0000024"/>
-        <rdfs:comment>http://pir.georgetown.edu/cgi-bin/resid?id=AA0067</rdfs:comment>
-        <rdfs:label>omega-N,omega-N`-dimethyl-L-arginine</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RESID_0074 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0074">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/pro/protein-site.owl#PROSITES_0000024"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RESID_0076 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0076">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RESID_0449 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0449">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
-        <rdfs:comment>http://pir.georgetown.edu/cgi-bin/resid?id=AA0449</rdfs:comment>
-        <rdfs:label>(2S,3R,4R)-4,5-dihydroxyisoleucine</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/pro/protein-site.owl#PROSITES_0000022 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pro/protein-site.owl#PROSITES_0000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001017"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0067"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001021"/>
-                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">mouse histone H3.3 Arg-9 site</rdfs:label>
+        <rdfs:label xml:lang="en">modified residue</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/pro/protein-site.owl#PROSITES_0000024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/pro/protein-site.owl#PROSITES_0000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
-        <obo:PROXXX_200 xml:lang="en">modified residue</obo:PROXXX_200>
-        <rdfs:label>modified residue</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001007 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001007">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001018"/>
-        <obo:PROXXX_204 rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">10</obo:PROXXX_204>
-        <rdfs:label xml:lang="en">position 10 in reference sequence of mouse histone H3.3</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001008 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001008">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001018"/>
-        <obo:PROXXX_204 rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">19</obo:PROXXX_204>
-        <rdfs:label xml:lang="en">position 19 in reference sequence of mouse histone H3.3</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001009 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001009">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001018"/>
-        <obo:PROXXX_204 rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">28</obo:PROXXX_204>
-        <rdfs:label xml:lang="en">position 28 in reference sequence of mouse histone H3.3</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001010 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001010">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001018"/>
-        <obo:PROXXX_204 rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</obo:PROXXX_204>
-        <rdfs:label xml:lang="en">position 1 in reference sequence of mouse histone H3.3</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001013 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001013"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001014 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001014"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001015 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001015"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001016 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001016"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001022 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001022">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001018"/>
-        <obo:PROXXX_204 rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9</obo:PROXXX_204>
-        <rdfs:label xml:lang="en">position 9 in reference sequence of mouse histone H3.3</rdfs:label>
-    </owl:NamedIndividual>
     
 
 
@@ -645,17 +293,8 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001013">
-        <rdfs:label xml:lang="en">mouse histone H3.3 Met-1 site</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001014">
-        <rdfs:label xml:lang="en">mouse histone H3.3 Lys-10 site</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001015">
-        <rdfs:label xml:lang="en">mouse histone H3.3 Lys-19 site</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001016">
-        <rdfs:label xml:lang="en">mouse histone H3.3 Lys-28 site</rdfs:label>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001020">
+        <rdfs:label xml:lang="en">inverse of is about</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
