@@ -15,7 +15,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/resid.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pro/protein-site-obo-imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pro/iao-imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2012-11-15/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2012-11-15-bugfix/bfo.owl"/>
     </owl:Ontology>
     
 
