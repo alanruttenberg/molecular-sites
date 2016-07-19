@@ -153,12 +153,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0074"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001021"/>
                 <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001007"/>
             </owl:Restriction>
@@ -193,12 +187,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001017"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0055"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001021"/>
@@ -261,19 +249,17 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001012"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001012"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001012"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001016"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001013"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0049"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -283,6 +269,38 @@
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001014"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0074"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001012"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001015"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0076"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001012"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001016"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0074"/>
@@ -374,14 +392,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001011"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/RESID_0067"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001021"/>
-                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001010"/>
+                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/PROXXX_0001022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">mouse histone H3.3 Arg-9 site</rdfs:label>
