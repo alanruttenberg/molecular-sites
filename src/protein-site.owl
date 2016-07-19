@@ -12,10 +12,11 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pro/protein-site.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/resid.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pro/protein-site-obo-imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pro/iao-imports.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2012-11-15-bugfix/bfo.owl"/>
+      <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pro/resid.owl"/>
+      <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pro/resid-extras.owl"/>
+      <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pro/protein-site-obo-imports.owl"/>
+      <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pro/iao-imports.owl"/>
+      <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2012-11-15-bugfix/bfo.owl"/>
     </owl:Ontology>
     
 

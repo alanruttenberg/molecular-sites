@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/pro/sites/example/histone.owl/"
+     xml:base="http://purl.obolibrary.org/obo/pro/sites/example/histone.owl/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pro/resid-extras.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/pro/resid.owl"/>
+    </owl:Ontology>
+
+<!-- http://purl.obolibrary.org/obo/PROXXX_0001024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001024">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0001"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0002"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0003"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0004"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0005"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0006"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0007"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0008"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0009"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0010"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0011"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0012"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0013"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0014"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0016"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0017"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0018"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0019"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0020"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
+        <rdfs:label xml:lang="en">canonical amino acid</rdfs:label>
+    </owl:Class>
+
+
+  </rdf:RDF>
+  

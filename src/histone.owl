@@ -235,42 +235,6 @@
     </owl:Class>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/PROXXX_0001024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001024">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0001"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0002"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0003"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0004"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0005"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0006"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0007"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0008"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0009"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0010"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0011"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0012"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0013"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0014"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0015"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0016"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0017"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0018"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0019"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RESID_0020"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33708"/>
-        <rdfs:label xml:lang="en">canonical amino acid</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PROXXX_0001025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PROXXX_0001025">
