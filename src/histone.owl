@@ -286,7 +286,7 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">amino acid unmodified H3.3 mouse</rdfs:label>
+        <rdfs:label xml:lang="en">H3.3 mouse without modified amino acid</rdfs:label>
     </owl:Class>
     
 
