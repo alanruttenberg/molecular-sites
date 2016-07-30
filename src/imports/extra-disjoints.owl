@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/pro/extra-disjoints.owl#"
+     xml:base="http://purl.obolibrary.org/obo/pro/extra-disjoints.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pro/extra-disjoints.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MOD_01441 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_01441">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00010"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00011"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00012"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00013"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00014"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00015"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00016"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00017"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00018"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00019"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00020"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00021"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00022"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00023"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00024"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00025"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00026"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00027"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00028"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00029"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00010"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00011"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00012"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00013"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00014"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00015"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00016"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00017"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00018"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00019"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00020"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00021"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00022"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00023"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00024"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00025"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00026"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00027"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00028"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MOD_00029"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.2016-06-18T08:46:24Z) https://github.com/owlcs/owlapi -->
+
+
+
+
+<!-- Warning: type declarations were not added automatically. -->
+

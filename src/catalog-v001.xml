@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pro/extra-equivalents.owl" uri="imports/extra-equivalents.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/pro/extra-disjoints.owl" uri="imports/extra-disjoints.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/pro/mod-disjoints.owl" uri="imports/mod-disjoints.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/pro/resid-disjoints.owl" uri="imports/resid-disjoints.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/pro/resid-mod-bridge.owl" uri="imports/resid-mod-bridge.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/mod/releases/2016-07-29/mod.owl" uri="imports/mod.owl"/>
     <uri name="http://purl.obolibrary.org/obo/pro/resid-extras.owl" uri="imports/resid-extras.owl"/>
     <uri name="http://purl.obolibrary.org/obo/pro/iao-imports.owl" uri="imports/iao-imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/pro/protein-site-obo-imports.owl" uri="imports/protein-site-obo-imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/pro/protein-site.owl" uri="protein-site.owl"/>
     <uri name="http://purl.obolibrary.org/obo/pro/resid.owl" uri="imports/resid.owl"/>
     <uri name="http://purl.obolibrary.org/obo/bfo/2012-11-15-bugfix/bfo.owl" uri="imports/bfo.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/iao.owl" uri="imports/iao.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao.owl" uri="imports/iao-imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl" uri="imports/ontology-metadata.owl"/>
 </catalog>

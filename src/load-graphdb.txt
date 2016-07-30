@@ -1,0 +1,13 @@
+LOAD <file:///Users/alanr/repos/molecular-sites/src/imports/bfo.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/imports/iao-imports.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/imports/ontology-metadata.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/imports/protein-site-obo-imports.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/imports/resid-mod-bridge.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/imports/extra-disjoints.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/imports/extra-equivalents.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/imports/resid.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/imports/resid-extras.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/imports/mod.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/protein-site.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/histone.owl>;
+LOAD <file:///Users/alanr/repos/molecular-sites/src/imports/inferred.owl>;
